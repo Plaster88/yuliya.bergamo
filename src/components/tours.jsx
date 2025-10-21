@@ -1,68 +1,30 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 import '../i18n';
+import { toursData } from '../data/tours';
 import { Row, Column, TourBlock, TourBlockLink, TourBlockDetails, TourBlockDetailsTime, TourBlockDetailsPrice } from '../styles';
 
 const Tours = () => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	const currentLang = i18n.language;
 
 	return (
 		<Row>
-      <Column>
-        <TourBlock imageName="tour_01.jpg">
-          <TourBlockLink href="#">История Парижа<br />Пешеходная экскурсия</TourBlockLink>
-          <TourBlockDetails>
-            <TourBlockDetailsTime><span></span>от 2 часов</TourBlockDetailsTime>
-            <TourBlockDetailsPrice><span></span>200 €</TourBlockDetailsPrice>
-          </TourBlockDetails>
-        </TourBlock>
-      </Column>
-      <Column>
-        <TourBlock imageName="tour_02.jpg">
-          <TourBlockLink href="#">Лувр - история и  шедевры музея <br />Индивидуальная экскурсия</TourBlockLink>
-          <TourBlockDetails>
-            <TourBlockDetailsTime><span></span>от 2 часов</TourBlockDetailsTime>
-            <TourBlockDetailsPrice><span></span>250 €</TourBlockDetailsPrice>
-          </TourBlockDetails>
-        </TourBlock>
-      </Column>
-      <Column>
-        <TourBlock imageName="tour_03.jpg">
-          <TourBlockLink href="#">Версаль - Дворец Короля Солнца<br />Индивидуальная экскурсия</TourBlockLink>
-          <TourBlockDetails>
-            <TourBlockDetailsTime><span></span>от 2 часов</TourBlockDetailsTime>
-            <TourBlockDetailsPrice><span></span>280 €</TourBlockDetailsPrice>
-          </TourBlockDetails>
-        </TourBlock>
-      </Column>
-      <Column>
-        <TourBlock imageName="tour_04.jpg">
-          <TourBlockLink href="#">Музей Орсе<br />Индивидуальная экскурсия</TourBlockLink>
-          <TourBlockDetails>
-            <TourBlockDetailsTime><span></span>2 часа</TourBlockDetailsTime>
-            <TourBlockDetailsPrice><span></span>230 €</TourBlockDetailsPrice>
-          </TourBlockDetails>
-        </TourBlock>
-      </Column>
-      <Column>
-        <TourBlock imageName="tour_05.jpg">
-          <TourBlockLink href="#">Холм Монмартр<br />Пешеходная эксурсия</TourBlockLink>
-          <TourBlockDetails>
-            <TourBlockDetailsTime><span></span>2 часа</TourBlockDetailsTime>
-            <TourBlockDetailsPrice><span></span>220 €</TourBlockDetailsPrice>
-          </TourBlockDetails>
-        </TourBlock>
-      </Column>
-      <Column>
-        <TourBlock imageName="tour_06.jpg">
-          <TourBlockLink href="#">Париж и Монмартр<br />Автомобильно-пешеходная</TourBlockLink>
-          <TourBlockDetails>
-            <TourBlockDetailsTime><span></span>5 часов</TourBlockDetailsTime>
-            <TourBlockDetailsPrice><span></span>620 €</TourBlockDetailsPrice>
-          </TourBlockDetails>
-        </TourBlock>
-      </Column>
-    </Row>
+			{toursData.map((tour) => (
+				<Column key={tour.id}>
+					<TourBlock imageName={tour.imageName}>
+						<TourBlockLink as={Link} to={`/tour/${tour.id}`}>
+							{tour.title[currentLang]}<br />{tour.subtitle[currentLang]}
+						</TourBlockLink>
+						<TourBlockDetails>
+							<TourBlockDetailsTime><span></span>{tour.duration[currentLang]}</TourBlockDetailsTime>
+							<TourBlockDetailsPrice><span></span>{tour.price}</TourBlockDetailsPrice>
+						</TourBlockDetails>
+					</TourBlock>
+				</Column>
+			))}
+		</Row>
 	);
 };
 

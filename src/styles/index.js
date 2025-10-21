@@ -35,6 +35,15 @@ import {
   TourBlockDetails,
   TourBlockDetailsTime,
   TourBlockDetailsPrice,
+  TourDetailContainer,
+  TourDetailImage,
+  TourDetailContent,
+  TourDetailTitle,
+  TourDetailSubtitle,
+  TourDetailDescription,
+  TourDetailInfo,
+  TourDetailInfoItem,
+  BackButton,
 } from './Main';
 
 export {
@@ -70,4 +79,13 @@ export {
   TourBlockDetails,
   TourBlockDetailsTime,
   TourBlockDetailsPrice,
+  TourDetailContainer,
+  TourDetailImage,
+  TourDetailContent,
+  TourDetailTitle,
+  TourDetailSubtitle,
+  TourDetailDescription,
+  TourDetailInfo,
+  TourDetailInfoItem,
+  BackButton,
 };

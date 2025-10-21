@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   background: #ffffff;
   display: block;
   height: 130px;
@@ -72,7 +72,7 @@ export const LanguageSelect = styled.a`
 `;
 
 export const FlagImg = styled.span`
-  background-image: url('/pictures/language-list.png');
+  background-image: url('pictures/language-list.png');
   background-position: ${({ lang }) => lang === 'en' ? '-20px -20px' : '20px 0'};
   height: 20px;
   margin: 0 7px 0 0;

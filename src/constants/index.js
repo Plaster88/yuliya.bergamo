@@ -1,4 +1,4 @@
-export const logoUrl = '/pictures/logo.png';
+export const logoUrl = 'pictures/logo.png';
 
 export const links = ['about', 'tours', 'contacts'];
 
@@ -9,7 +9,7 @@ export const languages = [
     },
     {
       lang: 'ru',
-      text: 'Русский'
+      text: 'Russian'
     },
 ];
 

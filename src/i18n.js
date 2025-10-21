@@ -7,7 +7,11 @@ const resources = {
       home: 'TOURS',
       about: 'ABOUT US',
       tours: 'TOURS',
-      contacts: 'CONTACT US'
+      contacts: 'CONTACT US',
+      back: 'Back',
+      duration: 'Duration',
+      price: 'Price',
+      tour_not_found: 'Tour not found'
     }
   },
   ru: {
@@ -15,7 +19,11 @@ const resources = {
       home: 'ЭКСКУРСИИ',
       about: 'О НАС',
       tours: 'ТУРЫ',
-      contacts: 'КОНТАКТЫ'
+      contacts: 'КОНТАКТЫ',
+      back: 'Назад',
+      duration: 'Продолжительность',
+      price: 'Цена',
+      tour_not_found: 'Тур не найден'
     }
   }
 };

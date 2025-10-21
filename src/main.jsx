@@ -5,6 +5,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Tours from './pages/Tours';
+import TourDetail from './pages/TourDetail';
 import Contacts from './pages/Contacts';
 import GlobalStyle from './styles/GlobalStyle';
 import { Layout } from './components/layout';
@@ -17,6 +18,7 @@ const App = () => (
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="tours" element={<Tours />} />
+        <Route path="tour/:id" element={<TourDetail />} />
         <Route path="contacts" element={<Contacts />} />
       </Route>
     </Routes>

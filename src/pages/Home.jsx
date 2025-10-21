@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <PageContainer>
       <SliderSection>
-        <SliderImg alt='slider_bg' src='/pictures/bg.jpg'></SliderImg>
+        <SliderImg alt='slider_bg' src='pictures/bg.jpg'></SliderImg>
       </SliderSection>
       <Container>
         <SectionTitle>{t('home')}</SectionTitle>

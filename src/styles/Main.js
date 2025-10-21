@@ -51,11 +51,13 @@ export const Column = styled.div`
   padding-left: 15px;
 `;
 
-export const TourBlock = styled.div`
+export const TourBlock = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== 'imageName',
+})`
   width: 100%;
   min-height: 163px;
   position: relative;
-  background-image: ${({ imageName }) => `url(/pictures/${imageName})`};
+  background-image: ${({ imageName }) => `url(pictures/${imageName})`};
   background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +142,7 @@ export const TourBlockDetailsTime = styled.div`
     display: block;
     margin: 8px 10px 0 0;
     float: left;
-    background: url('/pictures/timeIcon.png') no-repeat;
+    background: url('pictures/timeIcon.png') no-repeat;
   }
 `;
 
@@ -155,6 +157,103 @@ export const TourBlockDetailsPrice = styled.div`
     display: block;
     margin: 8px 10px 0 0;
     float: left;
-    background: url('/pictures/priceIcon.png') no-repeat;
+    background: url('pictures/priceIcon.png') no-repeat;
+  }
+`;
+
+// Tour Detail Page Styles
+export const TourDetailContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
+`;
+
+export const TourDetailImage = styled.img`
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+`;
+
+export const TourDetailContent = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const TourDetailTitle = styled.h1`
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+`;
+
+export const TourDetailSubtitle = styled.h2`
+  font-size: 20px;
+  font-weight: normal;
+  color: #666;
+  margin: 0;
+  
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+`;
+
+export const TourDetailDescription = styled.p`
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+`;
+
+export const TourDetailInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 9px;
+  border-left: 4px solid #4071fb;
+`;
+
+export const TourDetailInfoItem = styled.div`
+  font-size: 16px;
+  color: #333;
+  
+  strong {
+    color: #4071fb;
+  }
+`;
+
+export const BackButton = styled.button`
+  background-color: #4071fb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2c5aa0;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64, 113, 251, 0.3);
   }
 `;
