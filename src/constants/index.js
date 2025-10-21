@@ -11,9 +11,14 @@ export const languages = [
       lang: 'ru',
       text: 'Russian'
     },
+    {
+      lang: 'it',
+      text: 'Italian'
+    },
 ];
 
 export const mapperLang = {
   ['en']: 'ENG',
-  ['ru']: 'RUS'
+  ['ru']: 'RUS',
+  ['it']: 'ITA'
 };;

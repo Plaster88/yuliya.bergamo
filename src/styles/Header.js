@@ -73,7 +73,12 @@ export const LanguageSelect = styled.a`
 
 export const FlagImg = styled.span`
   background-image: url('pictures/language-list.png');
-  background-position: ${({ lang }) => lang === 'en' ? '-20px -20px' : '20px 0'};
+  background-position: ${({ lang }) => {
+    if (lang === 'en') return '-20px -20px';
+    if (lang === 'ru') return '20px 0';
+    if (lang === 'it') return '-60px 0';
+    return '20px 0';
+  }};
   height: 20px;
   margin: 0 7px 0 0;
   position: relative;
