@@ -1,6 +1,6 @@
 export const logoUrl = 'pictures/logo.png';
 
-export const links = ['about', 'tours', 'contacts'];
+export const links = ['about', 'contacts'];
 
 export const languages = [
     {

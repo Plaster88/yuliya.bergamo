@@ -38,21 +38,16 @@ const TourDetail = () => {
   return (
     <PageContainer>
       <Container>
+        <SectionTitle>{tour.title[currentLang]}</SectionTitle>
+        <TourDetailSubtitle>
+            {tour.subtitle[currentLang]}
+        </TourDetailSubtitle>
         <TourDetailContainer>
           <TourDetailImage 
             src={`pictures/${tour.imageName}`} 
             alt={tour.title[currentLang]} 
           />
-          
           <TourDetailContent>
-            <TourDetailTitle>
-              {tour.title[currentLang]}
-            </TourDetailTitle>
-            
-            <TourDetailSubtitle>
-              {tour.subtitle[currentLang]}
-            </TourDetailSubtitle>
-            
             <TourDetailInfo>
               <TourDetailInfoItem>
                 <strong>{t('duration', 'Duration')}:</strong> {tour.duration[currentLang]}

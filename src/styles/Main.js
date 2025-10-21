@@ -19,7 +19,7 @@ export const SliderImg = styled.img`
 
 export const Container = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto 30px auto;
   max-width: 1140px;
 `;
 
@@ -97,8 +97,9 @@ export const TourBlock = styled.div.withConfig({
 `;
 
 export const SectionTitle = styled.h2`
-  padding: 25px 0 15px 0;
+  padding: 25px 0;
   font-size: 22px;
+  text-transform: uppercase;
 `;
 
 export const TourBlockLink = styled.a`
@@ -166,7 +167,8 @@ export const TourDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
+  padding-bottom: 30px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -187,6 +189,7 @@ export const TourDetailContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: left;
 `;
 
 export const TourDetailTitle = styled.h1`
@@ -205,6 +208,7 @@ export const TourDetailSubtitle = styled.h2`
   font-weight: normal;
   color: #666;
   margin: 0;
+  text-align: center;
   
   @media (max-width: 768px) {
     font-size: 18px;
@@ -216,6 +220,7 @@ export const TourDetailDescription = styled.p`
   line-height: 1.6;
   color: #555;
   margin: 0;
+  text-align: left;
 `;
 
 export const TourDetailInfo = styled.div`
@@ -226,11 +231,13 @@ export const TourDetailInfo = styled.div`
   background-color: #f8f9fa;
   border-radius: 9px;
   border-left: 4px solid #4071fb;
+  text-align: left;
 `;
 
 export const TourDetailInfoItem = styled.div`
   font-size: 16px;
   color: #333;
+  text-align: left;
   
   strong {
     color: #4071fb;
