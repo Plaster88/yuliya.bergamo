@@ -19,23 +19,21 @@ export const Nav = styled.nav`
   min-height: 100px;
   position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0;
+  padding: 0;
 `;
 
 export const NavbarHeader = styled.div`
   position: relative;
-  height: 100px;
-  padding: 20px 15px 5px 15px;
+  height: 130px;
+  padding: 0;
 `;
 
 export const NavbarMenu = styled.div`
   padding: 0 30px;
   position: absolute;
   right: 5px;
-  bottom: -29px;
+  bottom: 0;
 `;
 
 export const List = styled.ul`
@@ -61,10 +59,10 @@ export const ListElement = styled.li`
 `;
 
 export const Logo = styled.img`
-  height: 100px;
+  height: 116px;
   position: relative;
-  top: -20px;
-  left: -30px;
+  top: 7px;
+  left: 0;
 `;
 
 export const LanguageSelect = styled.a`
