@@ -4,6 +4,10 @@ export const PageContainer = styled.div`
   text-align: center;
   color: #000;
   padding: 100px 0 0 0;
+
+  @media (max-width: 768px) {
+    padding: 54px 0 0 0;
+  }
 `;
 
 export const SliderSection = styled.section`
@@ -24,6 +28,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 30px;
+    margin-bottom: 0;
   }
 `;
 
@@ -109,6 +114,11 @@ export const SectionTitle = styled.h2`
   padding: 25px 0;
   font-size: 22px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-weight: normal;
+    padding: 5px 0 25px 0;
+  }
 `;
 
 export const TourBlockLink = styled.a`

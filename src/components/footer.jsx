@@ -14,6 +14,7 @@ import {
   FooterDiv,
   FooterRow,
   FooterCopyright,
+  SocialIcon,
 } from '../styles';
 
 const Footer = () => {
@@ -28,17 +29,23 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="https://www.facebook.com/profile.php?id=100001931602082" target="_blank" rel="noopener noreferrer">
-                  <FaFacebook color="#fff" size="20px" />
+                  <SocialIcon>
+                    <FaFacebook color="#fff" />
+                  </SocialIcon>
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/yuliya_parchuk/" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram color="#fff" size="20px" />
+                  <SocialIcon>
+                    <FaInstagram color="#fff" />
+                  </SocialIcon>
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/yuliya-parchuk/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin color="#fff" size="20px" />
+                  <SocialIcon>
+                    <FaLinkedin color="#fff" />
+                  </SocialIcon>
                 </a>
               </li>
             </ul>

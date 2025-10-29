@@ -19,6 +19,7 @@ import {
   FooterDiv,
   FooterCopyright,
   FooterRow,
+  SocialIcon,
 } from './Footer';
 import {
   PageContainer,
@@ -66,6 +67,7 @@ export {
   FooterDiv,
   FooterCopyright,
   FooterRow,
+  SocialIcon,
   SliderSection,
   SliderImg,
   Container,

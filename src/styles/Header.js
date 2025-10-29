@@ -11,6 +11,10 @@ export const HeaderContainer = styled.header`
   display: block;
   height: 100px;
   font-size: 16px;
+
+  @media (max-width: 768px) {
+    height: 54px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -20,12 +24,21 @@ export const Nav = styled.nav`
   display: block;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 768px) {
+    min-height: 44px;
+  }
 `;
 
 export const NavbarHeader = styled.div`
   position: relative;
   height: 100px;
   padding: 0;
+
+  @media (max-width: 768px) {
+    height: 54px;
+    text-align: center;
+  }
 `;
 
 export const NavbarMenu = styled.div`
@@ -67,20 +80,10 @@ export const Logo = styled.img`
   top: 5px;
   left: 15px;
 
-  &.desktop-logo {
-    display: block;
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
-  &.mobile-logo {
-    display: none;
-    @media (max-width: 768px) {
-      display: block;
-      margin: 0 auto;
-      left: 0;
-    }
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    left: 0;
+    height: 44px;
   }
 `;
 
