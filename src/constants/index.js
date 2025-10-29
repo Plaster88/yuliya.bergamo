@@ -1,4 +1,5 @@
 export const logoUrl = 'pictures/logo_tours.png';
+export const mobileLogoUrl = 'pictures/logo-transparent.png';
 
 export const links = ['about', 'contacts'];
 

@@ -12,7 +12,7 @@ import {
   Logo
 } from '../styles';
 import LanguageSelectComponent from './languageSelect';
-import { logoUrl, links } from '../constants';
+import { logoUrl, mobileLogoUrl, links } from '../constants';
 
 const Header = () => {
 	const { t } = useTranslation();
@@ -22,7 +22,8 @@ const Header = () => {
 			<Nav>
 				<NavbarHeader>
           <NavLink to='/'>
-            <Logo alt='logo' src={logoUrl} />
+            <Logo alt='logo' src={logoUrl} className="desktop-logo" />
+            <Logo alt='logo' src={mobileLogoUrl} className="mobile-logo" />
           </NavLink>
 				</NavbarHeader>
 				<NavbarMenu>

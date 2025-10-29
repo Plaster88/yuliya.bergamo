@@ -33,6 +33,10 @@ export const NavbarMenu = styled.div`
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const List = styled.ul`
@@ -62,6 +66,22 @@ export const Logo = styled.img`
   position: relative;
   top: 5px;
   left: 15px;
+
+  &.desktop-logo {
+    display: block;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &.mobile-logo {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      margin: 0 auto;
+      left: 0;
+    }
+  }
 `;
 
 export const LanguageSelect = styled.a`

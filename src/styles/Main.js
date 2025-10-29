@@ -21,6 +21,10 @@ export const Container = styled.div`
   width: 100%;
   margin: 20px auto 30px auto;
   max-width: 1140px;
+
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
 `;
 
 export const LayoutContainer = styled.div`
@@ -49,6 +53,11 @@ export const Column = styled.div`
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 `;
 
 export const TourBlock = styled.div.withConfig({
