@@ -2,8 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import { 
   PageContainer, 
-  Container, 
-  SectionTitle,
+  Container,
   TourDetailContainer,
   TourDetailImage,
   TourDetailContent,
@@ -14,14 +13,11 @@ import {
 } from '../styles';
 
 const About = () => {
-  const { t, i18n } = useTranslation();
-  const currentLang = i18n.language;
+  const { t } = useTranslation();
 
   return (
     <PageContainer>
       <Container>
-        <SectionTitle>{t('about')}</SectionTitle>
-        
         <TourDetailContainer>
           <TourDetailImage 
             src="pictures/yuliya_p.jpg" 
