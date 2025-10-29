@@ -1,4 +1,4 @@
-export const logoUrl = 'pictures/logo-transparent.png';
+export const logoUrl = 'pictures/logo_tours.png';
 
 export const links = ['about', 'contacts'];
 

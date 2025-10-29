@@ -9,8 +9,7 @@ export const HeaderContainer = styled.header`
   z-index: 1000;
   background: #ffffff;
   display: block;
-  height: 130px;
-  border-bottom: 1px solid gray;
+  height: 100px;
   font-size: 16px;
 `;
 
@@ -25,15 +24,15 @@ export const Nav = styled.nav`
 
 export const NavbarHeader = styled.div`
   position: relative;
-  height: 130px;
+  height: 100px;
   padding: 0;
 `;
 
 export const NavbarMenu = styled.div`
   padding: 0 30px;
   position: absolute;
-  right: 5px;
-  bottom: 0;
+  right: 0;
+  top: 0;
 `;
 
 export const List = styled.ul`
@@ -59,10 +58,10 @@ export const ListElement = styled.li`
 `;
 
 export const Logo = styled.img`
-  height: 116px;
+  height: 90px;
   position: relative;
-  top: 7px;
-  left: 0;
+  top: 5px;
+  left: 15px;
 `;
 
 export const LanguageSelect = styled.a`

@@ -24,7 +24,7 @@ const About = () => {
         
         <TourDetailContainer>
           <TourDetailImage 
-            src="pictures/yuliya.jpg" 
+            src="pictures/yuliya_p.jpg" 
             alt={t('guide_photo', 'Guide Photo')} 
           />
           

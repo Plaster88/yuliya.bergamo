@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 export const PageContainer = styled.div`
   text-align: center;
   color: #000;
-  padding: 130px 0 0 0;
+  padding: 100px 0 0 0;
 `;
 
 export const SliderSection = styled.section`
